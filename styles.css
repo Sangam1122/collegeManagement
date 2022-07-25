@@ -31,3 +31,10 @@ left:600px;
   width: 200px;
   height:200px;
 }
+
+.scrollbar{
+  max-width:fit-content;
+  overflow-y: scroll;
+  height:80vh;
+  max-height: fit-content;
+}

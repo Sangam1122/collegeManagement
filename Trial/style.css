@@ -1,31 +1,11 @@
-body{
-  height:100vh;
-}
 
-.fa-stack[data-count]:after{
-  position:absolute;
-  right:15px;
-  top:1%;
-  content: attr(data-count);
-  font-size:30%;
-  padding:.6em;
-  border-radius:999px;
-  line-height:.75em;
-  color: white;
-  background:rgba(255,0,0,.85);
-  text-align:center;
-  min-width:2em;
-  font-weight:bold;
-}
-.fa-inverse{
-  --fa-inverse: purple;
-  font-size: 10px;
-}
 
-.LA{
-  position: absolute;
-right:700px;
-}
-.fa{
-  height:auto;
+
+.scrollbar{
+  max-width:fit-content;
+  overflow-y: scroll;
+  height:80vh;
+  max-height: fit-content;
+
+
 }
