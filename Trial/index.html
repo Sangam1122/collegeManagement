@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-green-300">
 
-  <nav class="bg-indigo-700 shadow-lg rounded-lg mx-2">
+  <nav class="bg-gradient-to-r from-fuchsia-500  to-purple-400 shadow-lg rounded-lg mx-2">
     <div class="container mx-auto">
       <div class="sm:flex justify-around">
         <!-- Site-title  -->
         <a href="#" class="text-white text-3xl font-bold p-3">WEB ZONE</a>
 
         <!-- Menus  -->
-        <ul class="text-gray-400 sm:self-center text-xl border-t sm:border-none">
+        <ul class="text-white-400 sm:self-center text-xl border-t sm:border-none">
           <li class="sm:inline-block">
             <a href="#" class="p-3 ">Home</a>
           </li>
@@ -40,57 +42,122 @@
       </div>
     </div>
   </nav>
-  <div class="flex"  >
+  <div class="flex overflow-y-auto">
 
 
-  <div class=" flex-none w-60  m-2 rounded-lg scrollbar " >
+    <div class=" flex-none w-60  m-2 rounded-lg scrollbar  ">
 
 
-    <ul class=" bg-green-300 w-56 rounded-lg   " >
-      <li class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   rounded-t-lg">Dashboard</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">Student reports </li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">Todays Worklist</li>
-      <li class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">admiision block</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">College functions</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">college meetings </li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">principle notifiactions</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">teachers plan</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">student section</li>
-
-      <li class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">admiision block</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">College functions</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">college meetings </li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">principle notifiactions</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">teachers plan</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">student section</li>
-
-      <li class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">admiision block</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">College functions</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">college meetings </li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">principle notifiactions</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">teachers plan</li>
-      <li  class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   ">student section</li>
+      <ul class=" bg-purple-300 w-56 rounded-lg   ">
 
 
 
-      <li class="h-11 bg-gradient-to-b from-cyan-500    to-purple-500 mt-1   rounded-b-lg">five</li>
-    </ul>
-  <!-- </div> -->
-</div>
 
 
 
-<!-- <div class="container-fluid inline" width="auto" > -->
+        <li>
+          <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdown"
+            data-collapse-toggle="dropdown">
 
-<div class="grow">
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>Dashboard </span>
+
+          </button>
+          <ul id="dropdown" class="hidden py-2">
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Reports</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">staff</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">print</a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li>
+          <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdown1"
+            data-collapse-toggle="dropdown1">
+
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>HOD </span>
+
+          </button>
+          <ul id="dropdown1" class="hidden py-2 ">
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">Auto-Mobile</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Electonics</a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li>
+          <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdownAcc"
+            data-collapse-toggle="dropdownAcc">
+
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>Accounts </span>
+
+          </button>
+          <ul id="dropdownAcc" class="hidden py-2 ">
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">M.C.Patil</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">Darshane Chodichha</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Dharmadhikari</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdownTeacher"
+            data-collapse-toggle="dropdownTeacher">
+
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>Accounts </span>
+
+          </button>
+          <ul id="dropdownTeacher" class="hidden py-2 ">
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">djfkjs</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">sdfjhkjhsdf</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">sfahksdjhfk</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+      <!-- </div> -->
+    </div>
 
 
 
-  <iframe class=" rounded-lg m-2 " name= "frame1" width="99%" height="98%" src="tree.html" ></iframe>
+    <!-- <div class="container-fluid inline" width="auto" > -->
+
+    <div class="grow">
 
 
-</div>
 
-</div>
+      <iframe class=" rounded-lg m-2  " name="frame1" width="99%" height="98%" src="tree.html"></iframe>
+
+
+    </div>
+
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
 </body>
+
 </html>
