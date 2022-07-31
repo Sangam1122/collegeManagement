@@ -11,6 +11,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body class="bg-green-300">
@@ -19,8 +20,9 @@
     <div class="container mx-auto">
 
       <div class="grid grid-cols-6 gap-4">
-        <a href="#" class="text-white text-3xl font-bold p-3">ColgLogo</a>
-        <div class="col-span-3 text-white text-3xl font-bold p-3">27th July 2022</div>
+        <img class="h-11"src="htmlfiles/img/logo.jfif"><a href="#" class="text-white text-3xl font-bold p-3"><span></span>SRTTC</a></img>
+
+        <div class="col-span-3 text-white text-3xl font-bold p-3">27th July 2022 <span> 12:39 PM Wednesday</span></div>
 
         <div class="col-span-2 absolute right-4 ">
           <ul class="text-white-400 sm:self-center text-xl border-t sm:border-none">
@@ -32,7 +34,18 @@
               <a href="#" class="p-3 "><i class="fa-solid fa-message text-4xl text-lime-400 p-1"></i></a>
             </li>
             <li class="sm:inline-block">
-              <a href="#" class="p-3 "><i class="fa-solid fa-user text-4xl text-blue-500  p-1"></i></a>
+
+
+              <div class="btn flex   ">
+      <button id="btnToggle"class=" block h-13 w-13   " type="button" name="button" >
+        <a href="#" class="p-3 "><i class="fa-solid fa-user text-4xl text-blue-500  h-full w--full object-cover"></i></a>
+      </button>
+      <div class="absolute right-0 top-16 w-48 py-2 mt-2 bg-white rounded-lg shadow-2xl hidden hideList border-2 border-black ">
+        <a class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" href="http://google.com">hi </a>
+        <a class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" href="">therre</a>
+        <a class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"  href="">hihi</a>
+      </div>
+    </div>
             </li>
 
           </ul>
@@ -58,7 +71,25 @@
       <ul class=" bg-purple-300 w-56 rounded-lg   ">
 
 
+        <li>
+          <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="admission"
+            data-collapse-toggle="admission">
 
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item><i class="fa-solid fa-graduation-cap mr-1"></i>Admission </span>
+
+          </button>
+          <ul id="admission" class="hidden  ">
+            <li>
+              <a href="htmlfiles/Admission.html" target="frame1" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
+            </li>
+            <li>
+              <a href="htmlfiles/Admission.html"target="frame1" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">Civil</a>
+            </li>
+            <li>
+              <a href="htmlfiles/Admission.html"target="frame1" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">CM</a>
+            </li>
+          </ul>
+        </li>
 
 
 
@@ -69,18 +100,18 @@
           <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdown1"
             data-collapse-toggle="dropdown1">
 
-            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>HOD </span>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item><i class="fa-solid fa-user-tie mr-1"></i></i>HOD </span>
 
           </button>
-          <ul id="dropdown1" class="hidden py-2 ">
+          <ul id="dropdown1" class="hidden  ">
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
+              <a href="htmlfiles/hod.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">CM</a>
+              <a href="htmlfiles/hod.html" target="frame1"class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">CM</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Electonics</a>
+              <a href="htmlfiles/hod.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Electonics</a>
             </li>
           </ul>
         </li>
@@ -90,18 +121,18 @@
           <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdown"
             data-collapse-toggle="dropdown">
 
-            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>Teachers </span>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item><i class="fa-solid fa-user-tie mr-1"></i>Teachers </span>
 
           </button>
-          <ul id="dropdown" class="hidden py-2">
+          <ul id="dropdown" class="hidden ">
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
+              <a href="htmlfiles/teacher.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">CM</a>
+              <a href="htmlfiles/teacher.html" target="frame1"class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">CM</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Civil</a>
+              <a href="htmlfiles/teacher.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Civil</a>
             </li>
           </ul>
         </li>
@@ -111,18 +142,18 @@
           <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdownAcc"
             data-collapse-toggle="dropdownAcc">
 
-            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>Students </span>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item><i class="fa-solid fa-user-graduate mr-1"></i>Students </span>
 
           </button>
-          <ul id="dropdownAcc" class="hidden py-2 ">
+          <ul id="dropdownAcc" class="hidden  ">
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
+              <a href="htmlfiles/studentNames.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Mech</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">CM</a>
+              <a href="htmlfiles/studentNames.html"target="frame1" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">CM</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Civil</a>
+              <a href="htmlfiles/studentNames.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Civil</a>
             </li>
           </ul>
         </li>
@@ -131,18 +162,18 @@
           <button type="button" class="flex items-center w-full p-2 text-base bg-purple-500 transition duration-75  group " aria-controls="dropdownTeacher"
             data-collapse-toggle="dropdownTeacher">
 
-            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item>Accounts </span>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item><i class="fa-solid fa-file-invoice-dollar mr-1"></i>Accounts </span>
 
           </button>
-          <ul id="dropdownTeacher" class="hidden py-2 ">
+          <ul id="dropdownTeacher" class="hidden  ">
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Check</a>
+              <a href="htmlfiles/accounts.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Check</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">Workflow</a>
+              <a href="htmlfiles/accounts.html" target="frame1"class="flex items-center w-full p-2 text-base  bg-purple-400  transition duration-75  group   pl-11">Workflow</a>
             </li>
             <li>
-              <a href="#" class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Assign</a>
+              <a href="htmlfiles/accounts.html" target="frame1"class="flex items-center w-full p-2 text-base bg-purple-400   transition duration-75  group   pl-11">Assign</a>
             </li>
           </ul>
         </li>
@@ -159,13 +190,13 @@
 
 
 
-      <iframe class=" rounded-lg m-2  " name="frame1" width="99%" height="98%" src="tree.html"></iframe>
+      <iframe class=" rounded-lg m-2 bg-gray-400  " name="frame1" width="99%" height="98%" src="htmlfiles/startPage.html"></iframe>
 
 
     </div>
 
   </div>
-
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="app.js" charset="utf-8"></script>
   <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
 </body>

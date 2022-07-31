@@ -39,3 +39,9 @@
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+
+.loginBackgroundImage{
+  background-image: url("htmlfiles/img/bgbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
