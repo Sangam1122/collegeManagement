@@ -38,3 +38,14 @@ NotbtnToggle.click(function(){
     WScreenBtn.addClass('hidden');
   }
 });
+
+
+
+function Check(){
+var showPassword =$('.pass');
+if(showPassword.attr('type')==="Password") {
+   showPassword.attr('type','text');
+}else{
+  showPassword.attr('type','Password');
+}
+}
