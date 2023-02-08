@@ -49,3 +49,48 @@ if(showPassword.attr('type')==="Password") {
   showPassword.attr('type','Password');
 }
 }
+
+
+
+function closeNotification(){
+  var close = $('.close');
+  close.addClass('hidden')
+}
+function close1(){
+
+  console.log("hello");
+}
+
+
+// -------------------settings/createToggle-------------------------
+
+
+$('.CrBtn1').click(function(){
+  var s1 = $('.s1');
+  var s2 = $('.s2');
+  var s3 = $('.s3');
+
+  if(s1.hasClass('.hidden')){
+    console.log("true");
+    s1.removeClass('.hidden');
+  }else{
+    console.log("false");
+  }
+
+})
+
+
+// function createToggle(){
+// var s1 = $('.s1');
+// var s2 = $('.s2');
+// var s3 = $('.s3');
+//
+// if(s1.hasClass('.hidden')){
+//   console.log("true");
+//   s1.removeClass('.hidden');
+// }else{
+//   console.log("false");
+// }
+//
+//
+// }

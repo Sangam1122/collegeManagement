@@ -10,6 +10,9 @@ const app = express();
 
 
 
+var username = "admin";
+var passwordLogin = "admin";
+
 app.set("view engine", "ejs");
 
 
@@ -26,6 +29,8 @@ app.use(express.static("public"));
 
 app.get("/login",function(req,res){
 
+
+
 res.render("login",{});
 
 });
@@ -33,8 +38,16 @@ res.render("login",{});
 
 // ------------------------dashboard----------------------------
 app.post("/login",function(req,res){
+  var user = req.body.username;
+  var pass = req.body.password;
+
+if(user === username && pass === passwordLogin){
 
 res.redirect("/login/dashboard");
+}else{
+
+  res.redirect("/login");
+}
 
 });
 // ------------------------dashboard----------------------------
